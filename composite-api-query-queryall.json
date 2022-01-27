@@ -1,0 +1,18 @@
+{
+"allOrNone" : true,
+"collateSubrequests": true,
+"compositeRequest" : [
+        {
+    "method" : "GET",
+    "url" : "/services/data/v53.0/query/?q=SELECT+Id,FirstName,LastName+FROM+Contact+WHERE+AccountId+=+'<AccountRecordIdFromYourOrg>'",
+    "referenceId": "ref1"
+    },{
+    "method" : "GET",
+    "url" : "/services/data/v53.0/query/?q=SELECT+Id,Name,Company,Status+FROM+Lead+WHERE+Status+=+'Open - Not Contacted'",
+    "referenceId": "ref2"
+    },{
+    "method" : "GET",
+    "url" : "/services/data/v53.0/queryAll/?q=SELECT+Id,Name,BillingCountry,BillingAddress+FROM+Account",
+    "referenceId": "ref3"
+    }]
+}

@@ -1,0 +1,45 @@
+{
+    "allOrNone" : "true",
+    "compositeRequest" : 
+    [   {
+            "method" : "GET",
+            "url" : "/services/data/v53.0/sobjects/Campaign/<CampaignRecordIdFromYourOrg>?fields=Id,Name,StartDate,EndDate",
+            "referenceId" : "CampaignQueryRef"
+    },{
+            "method" : "PATCH",
+            "url" : "/services/data/v53.0/sobjects/Campaign/@{CampaignQueryRef.Id}",
+            "referenceId" : "CampaignUpdateRef",
+            "body" : {
+                "Name" : "Annual Industrial Conference 2022",
+                "StartDate" : "2022-02-15",
+                "EndDate" : "2022-02-17"
+            }
+        },{
+            "method" : "POST",
+            "url" : "/services/data/v53.0/sobjects/Opportunity",
+            "referenceId" : "OpportunityInsertRef",
+            "body" :{
+                "Name" : "5 GenWatt Generators",
+                "CloseDate" : "2022-02-28",
+                "StageName" : "Prospecting",
+                "CampaignId" : "@{CampaignQueryRef.Id}",
+                "Amount" : "250000.00"
+            }
+        },{
+            "method" : "GET",
+            "url" : "/services/data/v53.0/query/?q=SELECT+Id,Name,Pricebook2Id,Product2Id,IsActive+FROM+PricebookEntry+WHERE+IsActive+=+true+LIMIT+1",
+            "referenceId" : "PricebookEntryQueryRef"
+        },{
+            "method" : "POST",
+            "url" : "/services/data/v53.0/sobjects/OpportunityLineItem",
+            "referenceId" : "OpportunityLineItemInsertRef",
+            "body" :{
+                "OpportunityId" : "@{OpportunityInsertRef.id}",
+                "Product2Id" : "@{PricebookEntryQueryRef.records[0].Product2Id}",
+                "PricebookEntryId" : "@{PricebookEntryQueryRef.records[0].Id}",
+                "Quantity" : "2.0",
+                "TotalPrice" : "100000.00"
+            }
+        }
+    ]
+}

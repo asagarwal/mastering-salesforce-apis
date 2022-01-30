@@ -1,0 +1,25 @@
+{
+    "allOrNone" : true,
+    "collateSubrequests": false,
+    "compositeRequest": 
+    [   {
+            "method": "PATCH",
+            "url": "/services/data/v53.0/sobjects/Account/<ExternalIDFieldAPIName>/<ExternalIDValue>",
+            "referenceId": "AccountUpsertRef1",
+            "body": {
+                "Name": "Edge Communications Pte. Ltd."
+            }
+        },{
+            "method" : "PATCH",
+            "url": "/services/data/v53.0/sobjects/Account/<ExternalIDFieldAPIName>/<ExternalIDValue>",
+            "referenceId": "AccountUpsertRef2",
+            "body": {
+                "Name": "ASAGARWAL.COM PTE. LTD."
+            }
+        },{
+            "method" : "DELETE",
+            "url" : "/services/data/v53.0/composite/sobjects?ids=<CaseRecordIDToDelete>,<CampaignRecordIDToDelete>&allOrNone=true",
+            "referenceId" : "ConctactCaseDeleteRef" 
+        }
+    ]
+}

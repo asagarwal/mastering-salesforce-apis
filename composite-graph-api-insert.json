@@ -1,0 +1,91 @@
+{
+    "graphs": [
+        {
+            "graphId": "1",
+            "compositeRequest": [
+                {
+                    "method": "POST",
+                    "url": "/services/data/v53.0/sobjects/Account/",
+                    "referenceId": "AccountRef1",
+                    "body": {
+                        "name": "Salesforce.com, Inc."
+                    }
+                },
+                {
+                    "method": "POST",
+                    "url": "/services/data/v53.0/sobjects/Contact/",
+                    "referenceId": "ContactRef11",
+                    "body": {
+                        "FirstName": "Marc",
+                        "LastName": "Benioff",
+                        "AccountId": "@{AccountRef1.id}"
+                    }
+                },
+                {
+                    "method": "POST",
+                    "url": "/services/data/v53.0/sobjects/Contact/",
+                    "referenceId": "ContactRef12",
+                    "body": {
+                        "FirstName": "Parker",
+                        "LastName": "Harris",
+                        "AccountId": "@{AccountRef1.id}"
+                    }
+                },
+                {
+                    "method": "POST",
+                    "url": "/services/data/v53.0/sobjects/Opportunity/",
+                    "referenceId": "OpportunityRef11",
+                    "body": {
+                        "CloseDate": "2022-12-31",
+                        "StageName": "Prospecting",
+                        "Name": "100 MacBook Air Laptops",
+                        "AccountId": "@{AccountRef1.id}"
+                    }
+                }
+            ]
+        },
+        {
+            "graphId": "2",
+            "compositeRequest": [
+                {
+                    "method": "POST",
+                    "url": "/services/data/v53.0/sobjects/Account/",
+                    "referenceId": "AccountRef2",
+                    "body": {
+                        "name": "Alphabet Inc."
+                    }
+                },
+                {
+                    "method": "POST",
+                    "url": "/services/data/v53.0/sobjects/Contact/",
+                    "referenceId": "ContactRef21",
+                    "body": {
+                        "FirstName": "Larry",
+                        "LastName": "Page",
+                        "AccountId": "@{AccountRef2.id}"
+                    }
+                },
+                {
+                    "method": "POST",
+                    "url": "/services/data/v53.0/sobjects/Contact/",
+                    "referenceId": "ContactRef22",
+                    "body": {
+                        "FirstName": "Sergey",
+                        "LastName": "Brin",
+                        "AccountId": "@{AccountRef2.id}"
+                    }
+                },
+                {
+                    "method": "POST",
+                    "url": "/services/data/v53.0/sobjects/Case/",
+                    "referenceId": "CaseRef21",
+                    "body": {
+                        "Subject": "MacBook Air S/N A40178X98712 Hangs Frequently",
+                        "AccountId": "@{AccountRef2.id}",
+                        "ContactId": "@{ContactRef21.id}"
+                    }
+                }
+            ]
+        }
+    ]
+}

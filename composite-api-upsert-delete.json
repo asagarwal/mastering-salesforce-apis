@@ -18,7 +18,7 @@
             }
         },{
             "method" : "DELETE",
-            "url" : "/services/data/v53.0/composite/sobjects?ids=<CaseRecordIDToDelete>,<CampaignRecordIDToDelete>&allOrNone=true",
+            "url" : "/services/data/v53.0/composite/sobjects?ids=<CaseRecordIDToDelete>,<OpportunityRecordIDToDelete>&allOrNone=true",
             "referenceId" : "ConctactCaseDeleteRef" 
         }
     ]

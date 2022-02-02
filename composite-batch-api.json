@@ -1,0 +1,30 @@
+{
+"batchRequests" : [
+    {
+    "method" : "POST",
+    "url" : "/services/data/v53.0/sobjects/Lead/",
+    "richInput" : { "FirstName" : "Tom",
+                    "LastName" : "Jerry",
+                    "Company" : "Tom n Jerry Inc."}
+    },{
+    "method" : "PATCH",
+    "url" : "/services/data/v53.0/sobjects/Account/<AccountRecordId>",
+    "richInput" : { "Name" : "New Salesforce.com, Inc."}
+    },{
+    "method" : "DELETE",
+    "url" : "/services/data/v53.0/sobjects/Opportunity/<OpportunityRecordId>"
+    },{
+    "method" : "GET",
+    "url" : "/services/data/v53.0/connect/"
+    },{
+    "method" : "GET",
+    "url" : "/services/data/v53.0/limits"
+    },{
+    "method" : "GET",
+    "url" : "/services/data/v53.0/sobjects/Task/describe/"
+    },{
+    "method" : "GET",
+    "url" : "/services/data/v53.0/query/?q=SELECT+Id,Name,BillingCountry,BillingAddress+FROM+Account"
+    }
+  ]
+}

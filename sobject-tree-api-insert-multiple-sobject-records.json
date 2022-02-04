@@ -1,0 +1,53 @@
+{
+    "records" : 
+    [
+        {
+            "attributes" : {"type" : "Account", "referenceId" : "AccountInsertRef1"},
+            "name" : "United Shipping Singapore Pte. Ltd.",
+            "phone" : "+65 9876 5432",
+            "childAccounts" :
+            {
+                "records" :
+                [{
+                    "attributes" : {"type" : "Account", "referenceId" : "ChildAccountInsertRef1"},
+                    "name" : "United Shipping India Pvt. Ltd.",
+                    "phone" : "+91 87654 32109"
+                }]
+            },
+            "Contacts" : 
+            {
+                "records" : 
+                [{ 
+                    "attributes" : {"type" : "Contact", "referenceId" : "ContactInsertRef1"},
+                    "lastname" : "Alex",
+                    "firstname" : "Chan",
+                    "Title" : "Senior Vice President",
+                    "Cases" :
+                    {
+                        "records" :
+                        [{
+                           "attributes" : {"type" : "Case", "referenceId" : "CaseInsertRef1"},
+                           "Subject" : "MacBook Laptops Not Received"
+                        }]
+                    }
+                }]
+            },
+            "Opportunities" : 
+            {
+                "records" : 
+                [{ 
+                    "attributes" : {"type" : "Opportunity", "referenceId" : "OpportunityInsertRef1"},
+                    "CloseDate" : "2022-12-31",
+                    "StageName" : "Prospecting",
+                    "Name" : "100 iMac 24 Inches"   
+                },
+                { 
+                    "attributes" : {"type" : "Opportunity", "referenceId" : "OpportunityInsertRef2"},
+                    "CloseDate" : "2022-12-31",
+                    "StageName" : "Prospecting",
+                    "Name" : "100 iPad Pro 12.9 inch"   
+                }]                
+            }
+        }
+    ]
+}

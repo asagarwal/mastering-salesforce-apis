@@ -1,0 +1,23 @@
+{
+    "records" : 
+    [   {
+            "attributes" : {"type" : "Case", "referenceId" : "CaseInsertRef1"},
+            "Status" : "New",
+            "Priority" : "Low",
+            "Subject" : "GenWatt Diesel Not Working - Case1",
+            "Origin" : "Web"            
+        },{
+            "attributes" : {"type" : "Case", "referenceId" : "CaseInsertRef2"},
+            "Status" : "New",
+            "Priority" : "Medium",
+            "Subject" : "GenWatt Diesel Not Working - Case2",
+            "Origin" : "Phone"            
+        },{
+            "attributes" : {"type" : "Case", "referenceId" : "CaseInsertRef3"},
+            "Status" : "New",
+            "Priority" : "High",
+            "Subject" : "GenWatt Diesel Not Working - Case3",
+            "Origin" : "Email"            
+        }
+    ]
+}

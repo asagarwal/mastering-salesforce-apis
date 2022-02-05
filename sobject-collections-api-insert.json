@@ -1,0 +1,18 @@
+{
+   "allOrNone" : false,
+   "records" : [{
+      "attributes" : {"type" : "Campaign"},
+        "Name" : "Nationwide Sales Drive - Jan 01-31, 2022",
+        "StartDate" : "2022-01-01",
+        "EndDate" : "2022-01-31"
+   },{
+      "attributes" : {"type" : "Lead"},
+        "FirstName" : "Jeff",
+        "LastName" : "Bezos",
+        "Company" : "Cadabra, Inc."
+   },{
+      "attributes" : {"type" : "Account"},
+        "Name" : "Tesla, Inc.",
+        "Website" : "https://www.tesla.com"
+   }]
+}

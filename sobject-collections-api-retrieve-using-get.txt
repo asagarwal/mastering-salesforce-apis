@@ -1,0 +1,4 @@
+# Copy and paste the following text in Request URL. Do remember to replace the RecordId placeholders with the Record ID of Case Records from Your Salesforce Org.
+
+
+{{instance_url}}/services/data/v53.0/composite/sobjects/case?ids=<RecordId1>,<RecordId2>,<RecordId3>&fields=Id,CaseNumber,Subject

@@ -1,0 +1,4 @@
+{
+   "ids" : ["<RecordId1>", "<RecordId2>", "RecordId3"],
+   "fields" : ["Id", "CaseNumber", "Subject"]
+}

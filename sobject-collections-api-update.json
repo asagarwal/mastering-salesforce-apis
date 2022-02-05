@@ -1,0 +1,16 @@
+{
+   "allOrNone" : false,
+   "records" : [{
+      "attributes" : {"type" : "Account"},
+      "id" : "<AccountRecordId>",
+      "NumberOfEmployees" : 27000
+   },{
+      "attributes" : {"type" : "Contact"},
+      "id" : "<ContactRecordId>",
+      "Title" : "CEO"
+   },{
+      "attributes" : {"type" : "Opportunity"},
+      "id" : "<OpportunityRecordId>",
+      "Amount" : 1000000
+   }]
+}

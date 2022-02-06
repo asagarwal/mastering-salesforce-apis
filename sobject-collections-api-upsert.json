@@ -1,0 +1,12 @@
+{
+    "allOrNone" : false,
+    "records" : [{
+        "attributes" : {"type" : "Account"},
+        "Name" : "Upserted Company One",
+        "<ExternalIDFieldAPIName>" : "<ExternalIDValue>"
+    }, {
+        "attributes" : {"type" : "Account"},
+        "Name" : "Upserted Company Two",
+        "<ExternalIDFieldAPIName>" : "<ExternalIDValue>"
+    }]
+}

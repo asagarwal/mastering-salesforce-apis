@@ -19,7 +19,7 @@
       <urn:sObjects xsi:type="urn1:Contact"> 
         <FirstName>Vivek</FirstName> 
         <LastName>Peter</LastName> 
-        <AccountId>0015j00000AC0LJAA1</AccountId>
+        <AccountId>[AccountIdFromYourOrg]</AccountId>
       </urn:sObjects> 
     </urn:create> 
   </soapenv:Body> 

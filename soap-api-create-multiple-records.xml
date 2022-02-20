@@ -1,0 +1,26 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com" xmlns:urn1="urn:sobject.enterprise.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Header>
+    <urn:SessionHeader>
+      <urn:sessionId>{{SessionId}}</urn:sessionId>
+    </urn:SessionHeader>
+  </soapenv:Header>
+  <soapenv:Body>
+    <urn:create>
+      <urn:sObjects xsi:type="urn1:Lead"> 
+            <FirstName>Daniel</FirstName>
+            <LastName>Longan</LastName>
+            <Company>Digicom, Inc.</Company>
+      </urn:sObjects> 
+      <urn:sObjects xsi:type="urn1:Account"> 
+            <Name>United Engineering</Name>
+            <Website>https://www.unitedengineering.com</Website>
+            <External_Id__c>A3001</External_Id__c>
+      </urn:sObjects> 
+      <urn:sObjects xsi:type="urn1:Contact"> 
+        <FirstName>Vivek</FirstName> 
+        <LastName>Peter</LastName> 
+        <AccountId>0015j00000AC0LJAA1</AccountId>
+      </urn:sObjects> 
+    </urn:create> 
+  </soapenv:Body> 
+</soapenv:Envelope>

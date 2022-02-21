@@ -1,0 +1,22 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com" xmlns:urn1="urn:sobject.enterprise.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Header>
+        <urn:SessionHeader>
+            <urn:sessionId>{{SessionId}}</urn:sessionId>
+        </urn:SessionHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <urn:upsert>
+            <urn:externalIDFieldName>External_Id__c</urn:externalIDFieldName>
+            <urn:sObjects xsi:type="urn1:Account">
+                <Name>UPDATED ASAGARWAL.COM PTE. LTD.</Name>
+                <Website>https://www.asagarwal.com</Website>
+                <External_Id__c>A3000</External_Id__c>
+            </urn:sObjects>
+            <urn:sObjects xsi:type="urn1:Account">
+                <Name>United Banking Ltd.</Name>
+                <Website>https://www.unitedbanking.com</Website>
+                <External_Id__c>A3001</External_Id__c>
+            </urn:sObjects>
+        </urn:upsert>
+    </soapenv:Body>
+</soapenv:Envelope>

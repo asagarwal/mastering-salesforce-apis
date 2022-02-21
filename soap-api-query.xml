@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:SessionHeader>
+         <urn:sessionId>{{SessionId}}</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:query>
+         <urn:queryString>Select Name, BillingCity, BillingPostalCode, BillingCountry from Account</urn:queryString>
+      </urn:query>
+   </soapenv:Body>
+</soapenv:Envelope>

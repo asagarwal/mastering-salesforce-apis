@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:met="http://soap.sforce.com/2006/04/metadata">
+   <soapenv:Header>
+      <met:SessionHeader>
+         <met:sessionId>{{SessionId}}</met:sessionId>
+      </met:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <met:describeMetadata>
+         <met:asOfVersion>53.0</met:asOfVersion>
+      </met:describeMetadata>
+   </soapenv:Body>
+</soapenv:Envelope>

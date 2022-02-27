@@ -9,5 +9,6 @@
             <met:type>CustomObject</met:type>
               <met:oldFullName>Invoice__c</met:oldFullName>
               <met:newFullName>Invoice_Header__c</met:newFullName>
+        <met:renameMetadata>
     </soapenv:Body>
 </soapenv:Envelope>
